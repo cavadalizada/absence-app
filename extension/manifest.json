@@ -1,0 +1,33 @@
+{
+    "name": "qayib",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "externally_connectable": {
+      "ids": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+
+        "*"
+      ],
+        "matches": ["*://www.foo.com/*"],
+        
+        "accepts_tls_channel_id": false
+      },
+    "browser_action": {
+      "default_popup":"popup.html",
+      "default_title": "Qayib"
+    },
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "permissions": [
+      "http://www.foo.com/*",
+      "tabs"
+    ]
+  }

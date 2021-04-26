@@ -1,0 +1,24 @@
+[ ] implement DNS domain verification
+
+[ ] implement PUT/PATCH/DELETE routes to modify data
+
+[ ] implement GET routes to show Student/Subject/Lesson lists
+
+[v] implement Payment Packs. Limit for number of teachers students per university
+            somewhat done, it is probably a terrible implementation but still is okay for a prototype
+            need to add checkLimit function to a model
+
+[v] implement payment system
+            added a basic stripe for backend, still may require auto renewal etc
+            need to prepare it for production add env variables etc
+            can't check yet need front end side aswell
+            
+[ ] maybe fix database schemas
+
+[ ] secure verify endpoint
+
+[ ] fix : createTeachers endpoint : using same emails in the array results in creation of multiple teachers
+
+[ ] Transfer the USC-voting-platform database to this app.
+
+[ ] .....  
